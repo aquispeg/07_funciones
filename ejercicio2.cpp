@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 int main(){
+	string nombre;
+	cout<<"---bienvenido al programa de la serie de fibonacci---"<<endl;
+	cout<< "ingrese su nombre: ";
+	getline(cin,nombre);
 	int n;
 	cout<< "ingrese la cantidad de terminos de la serie de fibonacci que desea generar: ";
 	cin>>n;
