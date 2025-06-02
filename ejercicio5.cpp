@@ -5,16 +5,15 @@ int mcd(int a, int b){
 }
 int mcm( int a , int b){
 	return (a*b)/mcd(a,b);
-	
 }
 int main(){
-	int num1,num2;
-	cout<<"ingrese el primer numero: ";
-	cin>>num1;
-	cout<<"ingrese el segundo numero: ";
-	cin>>num2;
-	cout<<"máximo comun divisor (mcd): "<<mcd(num1,num2)<<endl;
-	cout<<"minimo comun divisor (mcm): "<<mcm(num1,num2)<<endl;
+	int a,b,c,d;
+	cout<<"ingrese 4 numeros enteros: ";
+	cin>>a>>b>>c>>d;
+	int resultado_mcd=mcd(mcd(mcd(a,b),c),d);
+	int resultado_mcm=mcm(mcm(mcm(a,b),c),d);
+	cout<<"máximo comun divisor (mcd) de 4 numeros: "<<resultado_mcd<<endl;
+	cout<<"minimo comun divisor (mcm) de 4 numeros: "<<resultado_mcm<<endl;
 	
 	return 0;
 	
