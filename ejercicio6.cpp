@@ -21,8 +21,12 @@ float calcularsuma(int n){
 }
 int main(){
 	int n;
-	cout<<"ingrese un valor para n: ";
+	cout<<"ingrese un valor positivos para n: ";
 	cin>>n;
+	if(n<=0){
+		cout<<"error: n debe ser mayor que 0"<<endl;
+		return 1;
+	}
 		
 	float resultado=calcularsuma(n);
 	cout<<"el valor aproximado de s es: "<<resultado<<endl;
