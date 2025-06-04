@@ -20,10 +20,19 @@ using namespace std;
 }
 int main(){
 	int num1,num2;
-	cout<<"ingrese dos numeros positivos: ";
-	cin>>num1>>num2;
+	do{
+	   cout<<"ingrese dos numeros positivos y distinto de cero: ";
+	   cin>>num1>>num2;	
+	   if(num1<=0 || num2<=0){
+	   	cout<<"error: ambos numeros deben ser mayor que cero: "<<endl;
+	   }
+	}while(num1<=0 || num2<=0);
+	
 	
 	divporrest(num1,num2);
+	
 	return 0;
 }
+	
+
 
