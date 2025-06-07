@@ -14,7 +14,7 @@ void MCDyMCM (int a, int b, int *mcd, int *mcm){
 	i=1;
 	*mcd=1;
 	while (i<=a && i<=b){
-		if (a% i==0 && b&i==0)
+		if (a% i==0 && b%i==0)
 		    *mcd=i;
 		i=i+1;
 	}
