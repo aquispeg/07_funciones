@@ -2,7 +2,11 @@
 using namespace std;
 void MCDyMCM(int a,int b, int *mcd, int *mcm);
 int main (){
-	int x=18, y=24;
+	int x, y;
+	cout<<"agregar el valor de x: "<<endl;
+	cin>>x;
+	cout<<"agregar el valor de y: "<<endl;
+	cin>>y;
 	int rMCD, rMCM;
 	MCDyMCM (x,y, &rMCD, &rMCM);
 	cout<<"MCD: "<<rMCD<<endl;
