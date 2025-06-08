@@ -3,10 +3,14 @@ using namespace std;
 void MCDyMCM(int a, int b, int &mcd, int &mcm);
 int main (){
 	int x,y;
-	cout<<"ingrese el valor de x: "<<endl;
-	cin>>x;
-	cout<<"ingrese el valor de y: "<<endl;
-	cin>>y;
+	cout<<"ingrese el valor de x(entero positivo):  "<<endl;
+	while (!(cin>>x)|| x<=0){
+		cout<<"entrada no valida, intente de nuevo ";
+	}
+	cout<<"ingrese el valor de y(entero positivo): "<<endl;
+	while (!(cin >> y)|| y<=0){
+		cout<<"entrada no valida, intente de nuevo ";
+	}
 	int rMCD,rMCM;
 	MCDyMCM(x,y,rMCD,rMCM);
 	cout<<"MCD: "<<rMCD<<endl;
