@@ -18,13 +18,12 @@ int main (){
 	return 0;
 }
 void MCDyMCM(int a,int b, int &mcd, int &mcm){
-	int i;
-	i=1;
-	mcd=1;
-	while (i<=a && i<=b){
-		if (a%i==0 && b%i==0)
-		   mcd=i;
-		i=i+1;
+	int x=a,y=b;
+	while (y!=0){
+		int tem = y;
+		y=x%y;
+		x=tem;
 	}
+	mcd=x;
 	mcm=(a*b)/mcd;
 }
